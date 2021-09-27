@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <title>Form Project</title>
+    </head>
+      <body>
+          <div class="container-sm">
+            <form method="POST" action="#">
+            <!------------First line enter first and last name------------>
+                  <div class="form-control-lg">
+                      <label class="form-control-med" for="fname">First Name<br>
+                      <input class="form-control-med" type="text" id="fname" size="50"/></label>   
+                      
+                      <label class="form-control-med" for="lname">Last Name<br>
+                      <input class="form-control-med" type="text" id="lname" size="50"/></label>
+                  </div>
+            <!------------Second line enter address------------>
+                  <div class="form-control-lg">
+                    <label class="form-control-med" for="address">Address</label><br>
+                    <input class="form-control-med" type="text" name="address" size="106" >        
+                  </div>
+            <!------------Third line enter City, State and Zip------------>
+                  <div class="form-control-lg">
+
+                    <label class="form-control-med" for="ct">City<br>
+                    <input class="form-control-med" type="text" id="ct" size="50"/></label>
+                                  
+                
+                    <label class="form-control-med" for="state">State<br>
+                        <input class="form-control-med" list="State" type="text" size="30">
+                            <datalist id="State">
+                                <option value="Texas">
+                                <option value="North Dakota">
+                                <option value="Michigan">
+                                <option value="Utah">
+                                <option value="Alaska">
+                                <option value="Washington">
+                            </select>
+                        </label>
+
+                    <label class="form-control-med" for="zip">Zip<br>
+                    <input class="form-control-med" type="text" id="zip" size="14" /></label>                        
+                  </div>               
+            <!------------Forth line enter gender------------>
+                  <div class="form-control-lg">
+                    <div class="col-2">            
+                      <div class="row">
+                          <div class="col">
+                              <input class="form-check-input" type="radio" name="genderOptions" id="male" value="option1">
+                              <label class="form-check-label" for="male">Male</label>
+                          </div>
+                      <div class="col">
+                          <input class="form-check-input" type="radio" name="genderOptions" id="female" value="option2">
+                          <label class="form-check-label" for="female">Female</label><br>
+                      </div>
+                    </div>
+                  </div>
+            <!------------Last line Register button------------>
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-primary mb-3">Register</button>
+                </div>   
+            </form>
+          </div> 
+      </body>
+</html>
